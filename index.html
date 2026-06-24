@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron Coffee — Specialty Coffee &amp; Café</title>
+  <meta name="description" content="Saffron Coffee is a premium specialty café in Lahore serving direct-trade single-origin brews, hand-crafted espresso drinks, and artisanal desserts in a warm, modern atmosphere." />
+  <meta name="keywords" content="specialty coffee, café, espresso, cold brew, Lahore, artisan coffee" />
+  <meta property="og:title" content="Saffron Coffee — Specialty Coffee &amp; Café" />
+  <meta property="og:description" content="Premium specialty coffee, sourced direct-trade, roasted in small batches, served with love." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Saffron Coffee — home">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M8 18c1.5-4 6-8 12-6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="14" cy="11" r="3" fill="var(--accent)" opacity=".85"/>
+        </svg>
+        Saffron
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-btn">Reserve a Table</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <!-- Floating decorative blobs -->
+    <div class="hero-blob blob-1" aria-hidden="true"></div>
+    <div class="hero-blob blob-2" aria-hidden="true"></div>
+    <div class="hero-blob blob-3" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Specialty · Single Origin · Small Batch
+        </span>
+        <h1>
+          Where Every Cup<br>
+          Tells a <span class="hero-accent-word">
+            Story
+            <svg class="underline-svg" viewBox="0 0 180 14" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M2,10 Q45,2 90,8 Q135,14 178,5" stroke="var(--accent)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </h1>
+        <p class="hero-sub">From sun-kissed Ethiopian highlands to your hands — we travel the world so you taste the difference. Roasted weekly. Brewed with intention.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            Explore Menu
+          </a>
+          <a href="#about" class="btn btn-ghost btn-lg">Our Story →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong class="counter" data-target="12000">0</strong>
+            <span>Happy Customers</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <strong class="counter" data-target="9">0</strong>
+            <span>Years of Craft</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <strong>4.9<span style="font-size:1rem">★</span></strong>
+            <span>Google Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="hero-image">
+          <img src="img/caramal.png" alt="Saffron's signature caramel latte, poured with expert latte art" width="540" height="460" />
+          <div class="hero-img-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-badge glass-card">
+          <span class="badge-emoji" aria-hidden="true">🔥</span>
+          <div>
+            <strong>Chef's Special</strong>
+            <span>Updated Every Friday</span>
+          </div>
+        </div>
+
+        <div class="hero-badge-2 glass-card">
+          <span aria-hidden="true">☕</span>
+          <div>
+            <strong>Direct-Trade Beans</strong>
+            <span>Ethically Sourced</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== COUNTERS ===== -->
+  <section class="counters-section" aria-label="Our achievements">
+    <div class="container counters-grid">
+      <div class="counter-card reveal">
+        <span class="counter-icon" aria-hidden="true">😊</span>
+        <strong class="counter" data-target="12000">0</strong><span class="counter-suffix">+</span>
+        <p>Happy Customers</p>
+      </div>
+      <div class="counter-card reveal">
+        <span class="counter-icon" aria-hidden="true">☕</span>
+        <strong class="counter" data-target="48">0</strong><span class="counter-suffix">+</span>
+        <p>Coffee Varieties</p>
+      </div>
+      <div class="counter-card reveal">
+        <span class="counter-icon" aria-hidden="true">🏆</span>
+        <strong class="counter" data-target="9">0</strong><span class="counter-suffix"></span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="counter-card reveal">
+        <span class="counter-icon" aria-hidden="true">🚶</span>
+        <strong class="counter" data-target="350">0</strong><span class="counter-suffix">+</span>
+        <p>Daily Visitors</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about" aria-labelledby="about-heading">
+    <div class="container about-inner">
+      <div class="about-image reveal">
+        <img src="img/chef.png" alt="Our head barista carefully preparing a single-origin pour-over" width="520" height="480" />
+        <div class="about-img-tag glass-card">
+          <strong>🌍 Direct-Trade</strong>
+          <span>From Farm to Cup</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 id="about-heading">More Than Just a Cup of Coffee</h2>
+        <p>It began in 2015 — a small roaster, a second-hand espresso machine, and an unwavering obsession with the perfect extraction. Today, Saffron has become a beloved Lahore institution, but our philosophy is unchanged: every origin tells a story, and every cup you hold should be worth your morning.</p>
+        <p>We travel the world sourcing direct-trade beans — partnering directly with smallholder farmers in Ethiopia, Colombia, and Indonesia — then roast in small weekly batches to lock in peak freshness.</p>
+        <ul class="feature-list" role="list">
+          <li><span class="check-icon" aria-hidden="true">✓</span> Ethically sourced, direct-trade beans</li>
+          <li><span class="check-icon" aria-hidden="true">✓</span> Roasted weekly in small batches</li>
+          <li><span class="check-icon" aria-hidden="true">✓</span> Vegan &amp; gluten-free options available</li>
+          <li><span class="check-icon" aria-hidden="true">✓</span> Award-winning specialty baristas</li>
+        </ul>
+        <a href="#menu" class="btn btn-primary">Explore the Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu section" id="menu" aria-labelledby="menu-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Serve</span>
+        <h2 id="menu-heading">Our Signature Menu</h2>
+        <p>Every item is crafted daily from premium ingredients. No shortcuts, no compromises.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All Items</button>
+        <button class="tab-btn" data-filter="coffee" role="tab" aria-selected="false">Premium Brews</button>
+        <button class="tab-btn" data-filter="dessert" role="tab" aria-selected="false">Sweet Delights</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card reveal" data-category="coffee">
+          <div class="menu-img">
+            <img src="img/caramal.png" alt="Caramel Latte" width="360" height="280" loading="lazy" />
+            <span class="menu-badge">Most Loved</span>
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>Caramel Latte</h3>
+              <span class="price">$18</span>
+            </div>
+            <p>Smooth double espresso with steamed oat milk and a ribbon of golden house-made caramel.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">☕ Espresso</span>
+              <span class="diet-tag">Oat Milk</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="coffee">
+          <div class="menu-img">
+            <img src="img/classic.png" alt="Classic Espresso" width="360" height="280" loading="lazy" />
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>Classic Espresso</h3>
+              <span class="price">$24</span>
+            </div>
+            <p>Our signature house blend — bold, rich, and pulled to a perfect 28-second extraction.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">☕ Espresso</span>
+              <span class="diet-tag">Intense</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="coffee">
+          <div class="menu-img">
+            <img src="img/coldbrew.png" alt="24h Cold Brew" width="360" height="280" loading="lazy" />
+            <span class="menu-badge">Barista's Pick</span>
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>24h Cold Brew</h3>
+              <span class="price">$14</span>
+            </div>
+            <p>Steeped cold for 24 hours, yielding a silky-smooth cup with notes of dark chocolate and vanilla.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">❄️ Cold</span>
+              <span class="diet-tag">Low Acid</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="coffee">
+          <div class="menu-img">
+            <img src="img/jnn.jpg" alt="Dark Mocha" width="360" height="280" loading="lazy" />
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>Dark Mocha</h3>
+              <span class="price">$11</span>
+            </div>
+            <p>Espresso meets 70% single-origin dark chocolate in this indulgent, warming cup.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">☕ Espresso</span>
+              <span class="diet-tag">Rich</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="coffee">
+          <div class="menu-img">
+            <img src="img/vanila.png" alt="Vanilla Frappé" width="360" height="280" loading="lazy" />
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>Vanilla Frappé</h3>
+              <span class="price">$16</span>
+            </div>
+            <p>Blended espresso, vanilla bean ice cream, and crushed ice — topped with fresh whipped cream.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">🧊 Blended</span>
+              <span class="diet-tag">Ice Cream</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="dessert">
+          <div class="menu-img">
+            <img src="img/sweet desert.png" alt="Espresso Tiramisu" width="360" height="280" loading="lazy" />
+            <span class="menu-badge">House Classic</span>
+            <div class="menu-img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-row">
+              <h3>Espresso Tiramisu</h3>
+              <span class="price">$9</span>
+            </div>
+            <p>Traditional Italian recipe using our own house espresso, soaked ladyfingers and fresh mascarpone.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">🍰 Dessert</span>
+              <span class="diet-tag">Eggless</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section" id="why-us" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why Saffron</span>
+        <h2 id="why-heading">The Difference You Can Taste</h2>
+        <p>We believe great coffee doesn't happen by accident. It's the result of obsessive attention at every step.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🌍</div>
+          <h3>Direct-Trade Sourcing</h3>
+          <p>We visit our farm partners personally. Cutting out middlemen means better pay for farmers and better beans for you.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🔥</div>
+          <h3>Weekly Small-Batch Roasting</h3>
+          <p>Roasted in batches of 5 kg every Monday, so what's in your cup is never more than 7 days from the roaster.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🎓</div>
+          <h3>SCA-Certified Baristas</h3>
+          <p>Every Saffron barista holds a Specialty Coffee Association certification and trains monthly to sharpen their craft.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🌱</div>
+          <h3>Sustainably Operated</h3>
+          <p>Compostable packaging, zero food waste policy, and carbon-offset delivery make every visit guilt-free.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">❤️</div>
+          <h3>Community First</h3>
+          <p>We host free cupping events, a monthly open-mic, and partner with local artists to make Saffron a neighbourhood hub.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">✨</div>
+          <h3>Inclusive Menu</h3>
+          <p>Oat, almond, and coconut milk always available. Vegan and gluten-free options clearly labelled across the full menu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Gallery</span>
+        <h2 id="gallery-heading">A Glimpse Inside Saffron</h2>
+        <p>Moments of craft, community, and flavour — straight from our kitchen and café floor.</p>
+      </div>
+
+      <div class="bento-gallery" role="list">
+        <div class="bento-item item-large reveal" role="listitem">
+          <img src="img/coffee fam.png" alt="Our signature drinks lined up on the bar — the full Saffron family" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>The Full Lineup</h4>
+            <p>Every drink, crafted to order</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: The Full Lineup" data-src="coffee fam.png" data-alt="Our signature drinks lined up on the bar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item item-tall reveal" role="listitem">
+          <img src="img/glass.png" alt="Layered iced latte in a tall glass showing beautiful colour gradients" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>Layers of Flavour</h4>
+            <p>Our iced lattes are edible art</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: Layers of Flavour" data-src="glass.png" data-alt="Layered iced latte">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item reveal" role="listitem">
+          <img src="img/about.png" alt="The cosy interior of Saffron, warm lighting and wooden furniture" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>Warm Atmosphere</h4>
+            <p>A place to slow down and savour</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: Warm Atmosphere" data-src="about.png" data-alt="Cosy interior of Saffron">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item reveal" role="listitem">
+          <img src="img/vanila.png" alt="Vanilla frappé topped with whipped cream and caramel drizzle" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>Vanilla Frappé</h4>
+            <p>Summer in a glass</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: Vanilla Frappé" data-src="vanila.png" data-alt="Vanilla frappé">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item item-wide reveal" role="listitem">
+          <img src="img/coldbrew.png" alt="24-hour cold brew served over clear ice in a branded Saffron glass" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>24h Cold Brew</h4>
+            <p>Patience produces perfection</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: 24h Cold Brew" data-src="coldbrew.png" data-alt="24h cold brew">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item item-wide reveal" role="listitem">
+          <img src="img/brownie.png" alt="House-baked fudge brownie dusted with cocoa powder, freshly cut" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>Fudge Brownie</h4>
+            <p>Baked fresh every morning</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: Fudge Brownie" data-src="brownie.png" data-alt="House-baked fudge brownie">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+        <div class="bento-item reveal" role="listitem">
+          <img src="img/icedlatte.png" alt="Iced latte poured table-side, creating a beautiful swirl of milk and espresso" loading="lazy" />
+          <div class="bento-overlay">
+            <h4>Iced Latte</h4>
+            <p>The pour is part of the ritual</p>
+          </div>
+          <button class="bento-zoom" aria-label="View full image: Iced Latte" data-src="icedlatte.png" data-alt="Iced latte poured table-side">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <!-- ===== CTA STRIP ===== -->
+  <section class="cta-strip" aria-label="Reservation call to action">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Reserve your table for an unforgettable evening</h2>
+        <p>Private events, birthday celebrations, or just a quiet morning with a great book — we have a spot for you.</p>
+      </div>
+      <a href="#contact" class="btn btn-light btn-lg">Book a Table →</a>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2 id="reviews-heading">What Our Guests Say</h2>
+        <p>Don't take our word for it — hear from the people who start their mornings with us.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal" aria-label="Review by Ayesha R.">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>"I've been to specialty cafés across Karachi, Lahore, and London — Saffron is genuinely world-class. The Ethiopian single origin they rotate monthly is something I look forward to all year."</p>
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" aria-hidden="true">AR</div>
+            <div>
+              <strong>Ayesha R.</strong>
+              <span>Lahore · Regular since 2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal featured-review" aria-label="Review by Omar K.">
+          <div class="featured-badge">Staff Pick Review</div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>"Held my company's quarterly off-site here. The team were incredibly accommodating, the food was impeccable, and the cold brew kept us productive all afternoon. We're already booked for next quarter."</p>
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" aria-hidden="true">OK</div>
+            <div>
+              <strong>Omar K.</strong>
+              <span>CEO, Karachi · Event host</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal" aria-label="Review by Sana M.">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>"The tiramisu here ruined all other tiramisu for me. I'm not even sorry. Their baristas also genuinely love what they do — you can taste it in every cup. Saffron is my happy place."</p>
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" aria-hidden="true">SM</div>
+            <div>
+              <strong>Sana M.</strong>
+              <span>Food blogger · @sanaeatslahore</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-inner">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 id="contact-heading">Visit Us or Reserve a Table</h2>
+        <p>We'd love to welcome you. Reach out for reservations, private events, or just to say hello.</p>
+
+        <ul class="contact-list" role="list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Address</strong>
+              <span>Wabta Town, Lahore, Punjab, Pakistan</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+923271561208">+92 327 156 1208</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hello@saffroncoffee.pk">tahirashafique135@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <span>Monday – Sunday: 8:00 AM – 11:00 PM</span>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder" aria-label="Map location placeholder">
+          <div class="map-pin" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3" fill="var(--accent)"/></svg>
+          </div>
+          <p>Wabta Town, Lahore</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:12px;font-size:.85rem;padding:10px 20px;">Open in Google Maps ↗</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xbdeaklq" method="POST" novalidate aria-label="Table reservation form">
+        <h3 class="form-title">Reserve a Table</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Fatima Ahmed" required autocomplete="name" aria-required="true" />
+            <span class="field-error" id="nameError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" />
+            <span class="field-error" id="emailError" role="alert" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" placeholder="2" min="1" max="50" />
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Special Requests or Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Allergies, occasion, seating preferences…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+          <span class="btn-text">Send Reservation Request</span>
+          <span class="btn-loading" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="spin"><path d="M21 12a9 9 0 1 1-9-9"/></svg>
+            Sending…
+          </span>
+        </button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-newsletter">
+      <div class="container newsletter-inner">
+        <div class="newsletter-text">
+          <h3>Stay in the Loop</h3>
+          <p>Monthly brew notes, new origins, and exclusive early-access to our seasonal specials.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter sign-up">
+          <label for="newsletterEmail" class="sr-only">Email address for newsletter</label>
+          <input type="email" id="newsletterEmail" placeholder="your@email.com" autocomplete="email" aria-required="true" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Saffron Coffee — back to top">
+          <svg class="logo-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 18c1.5-4 6-8 12-6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="14" cy="11" r="3" fill="var(--accent)" opacity=".85"/>
+          </svg>
+          Saffron
+        </a>
+        <p>Specialty coffee, served with intention. Thank you for making us part of your morning.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://tiktok.com/@queenjan2050" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.32a8.16 8.16 0 0 0 4.77 1.52V7.39a4.85 4.85 0 0 1-1-.7z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Tahirainfo308-arch" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <nav aria-label="Footer navigation">
+          <a href="#about">Our Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#why-us">Why Saffron</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <address style="font-style:normal;">
+          <p>Wabta Town, Lahore<br>Punjab, Pakistan</p>
+          <p><a href="tel:+923271561208">+92 327 156 1208</a></p>
+          <p><a href="mailto:hello@saffroncoffee.pk">tahirashafique135@gmail.com</a></p>
+          <p>Mon – Sun<br>8:00 AM – 11:00 PM</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Saffron Coffee. All rights reserved. Made with ☕ in Lahore.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
